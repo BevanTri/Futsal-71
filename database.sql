@@ -62,16 +62,6 @@ CREATE TABLE payments (
     FOREIGN KEY (booking_id) REFERENCES bookings(id) ON DELETE CASCADE
 );
 
--- Table: testimonials
-CREATE TABLE testimonials (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
-    rating INT CHECK (rating BETWEEN 1 AND 5),
-    comment TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-);
-
 -- Insert default admin (password: admin123)
 INSERT INTO users (name, email, password, role) VALUES 
 ('Admin Futsal 71', 'admin@futsal71.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2UheHEEmuMi', 'admin');
