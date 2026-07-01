@@ -1,0 +1,19 @@
+# Credentials
+backend/config/database.php
+backend/config/ipaymu.php
+backend/config/google.php
+
+# Agent guide (contains API keys & credentials in notes)
+AGENTS.md
+
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
